@@ -21,3 +21,11 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    # reverse the phrase and see if it is equal to the original argument
+    
+    new_phrase = phrase.lower().replace(' ', '')
+    return new_phrase == new_phrase[::-1] 
+
+print(is_palindrome('taco cat'))
+print(is_palindrome('noon'))
+print(is_palindrome('robert'))

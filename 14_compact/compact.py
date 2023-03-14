@@ -4,3 +4,9 @@ def compact(lst):
         >>> compact([0, 1, 2, '', [], False, (), None, 'All done'])
         [1, 2, 'All done']
     """
+    # iterate through lst and check if item is None, 0, or ''
+    # if it is, remove it
+    return [item for item in lst if item]
+
+print(compact([0, 1, 2, '', [], False, (), None, 'All done']))  
+     
