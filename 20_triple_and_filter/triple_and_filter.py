@@ -13,3 +13,8 @@ def triple_and_filter(nums):
         >>> triple_and_filter([1, 2])
         []
     """
+    # if num in list is divisble by 4, triple it, and add it to a new list
+    return [num * 3 for num in nums if num % 4 == 0 ]
+
+print(triple_and_filter([1, 2, 3, 4]))
+print(triple_and_filter([6, 8, 10, 12]))
